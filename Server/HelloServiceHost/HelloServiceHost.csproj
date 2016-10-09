@@ -51,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CompanyService\CompanyService.csproj">
+      <Project>{fc46891c-cf25-4035-8277-55f9d9bae00e}</Project>
+      <Name>CompanyService</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyFirstService\MyFirstService.csproj">
       <Project>{0488ab2b-6877-4b77-89ab-8d83b9d6f857}</Project>
       <Name>MyFirstService</Name>

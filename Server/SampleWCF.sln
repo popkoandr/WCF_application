@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstService", "MyFirstSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceHost", "HelloServiceHost\HelloServiceHost.csproj", "{208217DC-A58E-4F29-89E1-93D23FA8A2EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyService", "CompanyService\CompanyService.csproj", "{FC46891C-CF25-4035-8277-55F9D9BAE00E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{208217DC-A58E-4F29-89E1-93D23FA8A2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{208217DC-A58E-4F29-89E1-93D23FA8A2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{208217DC-A58E-4F29-89E1-93D23FA8A2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC46891C-CF25-4035-8277-55F9D9BAE00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC46891C-CF25-4035-8277-55F9D9BAE00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC46891C-CF25-4035-8277-55F9D9BAE00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC46891C-CF25-4035-8277-55F9D9BAE00E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
