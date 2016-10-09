@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MyWpfClient.myPersonalService;
 
 namespace MyWpfClient
 {
@@ -30,6 +31,9 @@ namespace MyWpfClient
             HelloServiceOnWpf.HelloServiceClient client
                 =  new HelloServiceOnWpf.HelloServiceClient("NetTcpBinding_IHelloService");
             label1.Content = client.GetMessage(textBox1.Text);
+
+            myPersonalService.PersonalServiceClient myPersonalServiceClient = new PersonalServiceClient("BasicHttpBinding_IPersonalService");
+            MessageBox.Show(myPersonalServiceClient.DoWork());
         }
     }
 }

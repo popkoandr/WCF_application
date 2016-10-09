@@ -100,6 +100,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Service References\CompanyService\CompanyService.wsdl" />
+    <None Include="Service References\CompanyService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CompanyService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,6 +117,13 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
+    <None Include="Service References\CompanyService\item.disco" />
+    <None Include="Service References\CompanyService\configuration91.svcinfo" />
+    <None Include="Service References\CompanyService\configuration.svcinfo" />
+    <None Include="Service References\CompanyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="WebForm1.aspx" />
     <None Include="Service References\HelloService2\HelloService.wsdl" />
     <None Include="Service References\HelloService2\item.disco" />
@@ -129,6 +143,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CompanyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\HelloService2\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,6 +165,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CompanyService\" />
     <WCFMetadataStorage Include="Service References\HelloService2\" />
   </ItemGroup>
   <PropertyGroup>

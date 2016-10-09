@@ -57,7 +57,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Service References\CompanyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\HelloServiceOnWpf\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\myPersonalService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -98,6 +108,13 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="Service References\CompanyService\CompanyService.wsdl" />
+    <None Include="Service References\CompanyService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CompanyService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\HelloServiceOnWpf\HelloService.wsdl" />
     <None Include="Service References\HelloServiceOnWpf\item.xsd">
       <SubType>Designer</SubType>
@@ -105,6 +122,13 @@
     <None Include="Service References\HelloServiceOnWpf\item1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\myPersonalService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\myPersonalService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\myPersonalService\PersonalService.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -113,7 +137,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CompanyService\" />
     <WCFMetadataStorage Include="Service References\HelloServiceOnWpf\" />
+    <WCFMetadataStorage Include="Service References\myPersonalService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\HelloServiceOnWpf\item.disco" />
@@ -126,6 +152,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\HelloServiceOnWpf\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CompanyService\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CompanyService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CompanyService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CompanyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\myPersonalService\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\myPersonalService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\myPersonalService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\myPersonalService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

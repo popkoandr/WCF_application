@@ -20,6 +20,14 @@ namespace HelloServiceHost
             companyServiceHost.Opened += Host_Opened;
             companyServiceHost.Open();
 
+            ServiceHost personalServiceHost = new ServiceHost(typeof(CompanyService.PersonalService));
+            personalServiceHost.Closed += Host_Closed;
+            personalServiceHost.Opened += Host_Opened;
+            personalServiceHost.Open();
+            
+
+
+
 
 
             //helloServiceHost.Close();
