@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebApplication1.CompanyService;
+using WebApplication1.ServiceReferenceEmployeeService;
+
+//using WebApplication1.EmployeeService;
 
 namespace WebApplication1
 {
@@ -17,13 +20,13 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            HelloService2.HelloServiceClient client = new  HelloService2.HelloServiceClient("BasicHttpBinding_IHelloService");
+            HelloService2.HelloServiceClient client = new HelloService2.HelloServiceClient("BasicHttpBinding_IHelloService");
             Label1.Text = client.GetMessage(TextBox1.Text);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            CompanyService.CompanyPublicServiceClient publicServiceClient  = new CompanyPublicServiceClient("BasicHttpBinding_ICompanyPublicService");
+            CompanyService.CompanyPublicServiceClient publicServiceClient = new CompanyPublicServiceClient("BasicHttpBinding_ICompanyPublicService");
             Label2.Text = publicServiceClient.GetPublicInformation();
         }
 
@@ -33,5 +36,32 @@ namespace WebApplication1
             Label3.Text = confidentialServiceClient.GetConfidentialInformation();
 
         }
+
+        protected void btnGetEmployee_Click(object sender, EventArgs e)
+        {
+            EmployeeServiceClient client = new EmployeeServiceClient("BasicHttpBinding_IEmployeeService");
+           Employee employee = client.GetEmployee(Convert.ToInt32(txtID.Text));
+
+            txtName.Text = employee.Name;
+            txtGender.Text = employee.Gender;
+            txtDateOfBirth.Text = employee.DateOfBirth.ToShortDateString();
+            lblMessage.Text = "Employee retrieved";
+        }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            EmployeeServiceClient client = new EmployeeServiceClient("BasicHttpBinding_IEmployeeService");
+           Employee employee = client.GetEmployee(Convert.ToInt32(txtID));
+
+            employee.Id = Convert.ToInt32(txtID.Text);
+            employee.Name = txtName.Text;
+            employee.Gender = txtGender.Text;
+            employee.DateOfBirth = Convert.ToDateTime(txtDateOfBirth.Text);
+
+            client.SaveEmployee(employee);
+
+            lblMessage.Text = "Employee saved";
+        }
+
     }
 }

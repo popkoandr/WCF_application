@@ -107,6 +107,19 @@
     <None Include="Service References\CompanyService\item1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\ServiceReferenceEmployeeService\EmployeeService.wsdl" />
+    <None Include="Service References\ServiceReferenceEmployeeService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceEmployeeService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReferenceEmployeeService\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ServiceReferenceEmployeeService\WebApplication1.ServiceReferenceEmployeeService.Employee.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -121,6 +134,13 @@
     <None Include="Service References\CompanyService\configuration91.svcinfo" />
     <None Include="Service References\CompanyService\configuration.svcinfo" />
     <None Include="Service References\CompanyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReferenceEmployeeService\item.disco" />
+    <None Include="Service References\ServiceReferenceEmployeeService\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceEmployeeService\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceEmployeeService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -153,6 +173,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Service References\ServiceReferenceEmployeeService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,6 +192,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\CompanyService\" />
     <WCFMetadataStorage Include="Service References\HelloService2\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceEmployeeService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

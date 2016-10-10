@@ -50,12 +50,73 @@
         </fieldset>
 
         <fieldset style="border: 2px solid green;">
+            <legend>EmployeeService</legend>
+            <div>
+                <table style="font-family: Arial; border: 1px solid black;">
+                    <tr>
+                        <td>
+                            <b>ID</b>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtID" runat="server">
+                            </asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Name</b>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtName" runat="server">
+                            </asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Gender</b>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtGender" runat="server">
+                            </asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Date Of Birth</b>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtDateOfBirth" runat="server">
+                            </asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="btnGetEmployee" runat="server"
+                                Text="Get Employee"
+                                OnClick="btnGetEmployee_Click" />
+                        </td>
+                        <td>
+                            <asp:Button ID="btnSave" runat="server"
+                                Text="Save Employee"
+                                OnClick="btnSave_Click" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <asp:Label ID="lblMessage" runat="server"
+                                ForeColor="Green" Font-Bold="true">
+                            </asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+            <hr />
+        </fieldset>
+
+        <fieldset style="border: 2px solid green;">
             <legend>HelloService</legend>
             <div>
-                <asp:Label ID="Label4" runat="server" Text="Label" />
-                <br />
-                <asp:Button ID="Button4" runat="server" Text="Get Hello" />
-                <asp:TextBox ID="TextBox4" runat="server" />
             </div>
             <br />
             <hr />
