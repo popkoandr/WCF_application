@@ -107,17 +107,17 @@
     <None Include="Service References\CompanyService\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReferenceEmployeeService\EmployeeService.wsdl" />
-    <None Include="Service References\ServiceReferenceEmployeeService\item.xsd">
+    <None Include="Service References\EmployeeService\EmployeeService.wsdl" />
+    <None Include="Service References\EmployeeService\item.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReferenceEmployeeService\item1.xsd">
+    <None Include="Service References\EmployeeService\item1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ServiceReferenceEmployeeService\item2.xsd">
+    <None Include="Service References\EmployeeService\item2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\ServiceReferenceEmployeeService\WebApplication1.ServiceReferenceEmployeeService.Employee.datasource">
+    <Content Include="Service References\EmployeeService\WebApplication1.EmployeeService.Employee.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Web.Debug.config">
@@ -137,10 +137,10 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\ServiceReferenceEmployeeService\item.disco" />
-    <None Include="Service References\ServiceReferenceEmployeeService\configuration91.svcinfo" />
-    <None Include="Service References\ServiceReferenceEmployeeService\configuration.svcinfo" />
-    <None Include="Service References\ServiceReferenceEmployeeService\Reference.svcmap">
+    <None Include="Service References\EmployeeService\item.disco" />
+    <None Include="Service References\EmployeeService\configuration91.svcinfo" />
+    <None Include="Service References\EmployeeService\configuration.svcinfo" />
+    <None Include="Service References\EmployeeService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -168,12 +168,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\HelloService2\Reference.cs">
+    <Compile Include="Service References\EmployeeService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\ServiceReferenceEmployeeService\Reference.cs">
+    <Compile Include="Service References\HelloService2\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -191,8 +191,8 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\CompanyService\" />
+    <WCFMetadataStorage Include="Service References\EmployeeService\" />
     <WCFMetadataStorage Include="Service References\HelloService2\" />
-    <WCFMetadataStorage Include="Service References\ServiceReferenceEmployeeService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
