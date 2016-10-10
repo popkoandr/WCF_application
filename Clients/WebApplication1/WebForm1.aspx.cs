@@ -51,7 +51,7 @@ namespace WebApplication1
         protected void btnSave_Click(object sender, EventArgs e)
         {
             EmployeeServiceClient client = new EmployeeServiceClient("BasicHttpBinding_IEmployeeService");
-           Employee employee = client.GetEmployee(Convert.ToInt32(txtID));
+           Employee employee = client.GetEmployee(Convert.ToInt32(txtID.Text));
 
             employee.Id = Convert.ToInt32(txtID.Text);
             employee.Name = txtName.Text;
