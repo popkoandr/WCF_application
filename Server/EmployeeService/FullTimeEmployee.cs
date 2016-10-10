@@ -2,7 +2,7 @@
 {
     public class FullTimeEmployee:Employee
     {
-        public int AnnualySalary { get; set; }
+        public int AnnualSalary { get; set; }
 
     }
 }
